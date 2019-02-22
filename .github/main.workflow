@@ -9,6 +9,7 @@ action "test" {
 
 action "filter" {
   uses = "./filter"
+  args = "master"
 }
 
 action "echo" {

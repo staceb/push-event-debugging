@@ -1,7 +1,7 @@
 #!/bin/sh -eu
 
 ref=$(jq -r '.ref' "$GITHUB_EVENT_PATH")
-pattern=$1
+pattern="refs/heads/$1"
 
 case "$ref" in
   "")
