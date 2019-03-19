@@ -3,7 +3,7 @@ workflow "New workflow" {
   resolves = ["test", "echo"]
 }
 
-workflow "New workflow" {
+workflow "New Release workflow" {
   on = "release"
   resolves = ["test", "echo"]
 }
