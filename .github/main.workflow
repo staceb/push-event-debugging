@@ -3,6 +3,11 @@ workflow "New workflow" {
   resolves = ["test", "echo"]
 }
 
+workflow "New workflow" {
+  on = "release"
+  resolves = ["test", "echo"]
+}
+
 action "test" {
   uses = "./test"
 }
